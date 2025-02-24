@@ -3,58 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Bulletin</title>
+    <title>Latest News - E-Bulletin</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script defer src="assets/js/script.js"></script>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-
-
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
+
     <!-- Header -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">E-Bulletin</a>
+            <a class="navbar-brand" href="index.html">E-Bulletin</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown">Categories</a>
-                        <ul class="dropdown-menu" id="categoryMenu"></ul>
-                    </li>
                     <li class="nav-item"><a class="nav-link" href="latest-news.html">Latest News</a></li>
-                    <li class="nav-item">
-                        <input class="form-control me-2" type="search" id="searchInput" placeholder="Search news...">
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-     <!-- News Slider -->
-     <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" id="sliderContainer"></div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
-
-
-    <!-- Popular News -->
+    <!-- Latest News -->
     <div class="container mt-4">
-        <h2>Popular News</h2>
-        <div class="row" id="popularNewsContainer"></div>
+        <h2>Latest News</h2>
+        <div class="row" id="latestNewsContainer"></div>
     </div>
 
     <!-- Footer -->

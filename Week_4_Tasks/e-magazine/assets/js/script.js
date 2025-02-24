@@ -3,17 +3,27 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
             loadCategories(data);
-            loadSlider(data);
-            loadLatestNews(data);
-            loadPopularNews(data);
+            if (document.getElementById("sliderContainer")) {
+                loadSlider(data);
+            }
+            if (document.getElementById("popularNewsContainer")) {
+                loadPopularNews(data);
+            }
+            if (document.getElementById("latestNewsContainer")) {
+                loadLatestNews(data);
+            }
         })
         .catch(error => console.error("Error loading articles.json:", error));
 
-    document.getElementById("searchInput").addEventListener("input", searchNews);
+    if (document.getElementById("searchInput")) {
+        document.getElementById("searchInput").addEventListener("input", searchNews);
+    }
 });
 
 function loadCategories(data) {
     const categoryMenu = document.getElementById("categoryMenu");
+    if (!categoryMenu) return;
+
     const categories = [...new Set(data.map(article => article.category))];
     categories.forEach(category => {
         const li = document.createElement("li");
@@ -24,6 +34,8 @@ function loadCategories(data) {
 
 function loadSlider(data) {
     const sliderContainer = document.getElementById("sliderContainer");
+    if (!sliderContainer) return;
+
     data.slice(0, 5).forEach((article, index) => {
         const slide = document.createElement("div");
         slide.className = `carousel-item ${index === 0 ? "active" : ""}`;
@@ -39,22 +51,28 @@ function loadSlider(data) {
 
 function loadLatestNews(data) {
     const latestNewsContainer = document.getElementById("latestNewsContainer");
-    data.slice(-5).forEach(article => {
+    if (!latestNewsContainer) return;
+
+    latestNewsContainer.innerHTML = ""; // Clear previous content
+    data.forEach(article => { // Show all latest news articles
         latestNewsContainer.innerHTML += createNewsCard(article);
     });
 }
 
 function loadPopularNews(data) {
     const popularNewsContainer = document.getElementById("popularNewsContainer");
+    if (!popularNewsContainer) return;
+
+    popularNewsContainer.innerHTML = ""; // Clear previous content
     const sortedArticles = data.sort((a, b) => (b.views + b.comments.length) - (a.views + a.comments.length));
-    sortedArticles.slice(0, 5).forEach(article => {
+    sortedArticles.forEach(article => { // Show all popular news articles
         popularNewsContainer.innerHTML += createNewsCard(article);
     });
 }
 
 function createNewsCard(article) {
     return `
-        <div class="col-md-3 col-sm-6 mt-3 ">
+        <div class="col-lg-4 col-md-4 mt-3">
             <div class="card">
                 <img src="${article.image}" class="card-img-top" alt="${article.title}">
                 <div class="card-body">
@@ -74,13 +92,12 @@ function createNewsCard(article) {
         </div>`;
 }
 
-
 function searchNews(event) {
     const query = event.target.value.toLowerCase();
     fetch("data/articles.json")
         .then(response => response.json())
         .then(data => {
-            const results = data.filter(article => 
+            const results = data.filter(article =>
                 article.title.toLowerCase().includes(query) ||
                 article.description.toLowerCase().includes(query) ||
                 article.keywords.some(keyword => keyword.toLowerCase().includes(query))
@@ -91,7 +108,9 @@ function searchNews(event) {
 }
 
 function displaySearchResults(results) {
-    const latestNewsContainer = document.getElementById("latestNewsContainer");
+    const latestNewsContainer = document.getElementById("popularNewsContainer");
+    if (!latestNewsContainer) return;
+
     latestNewsContainer.innerHTML = "";
     results.forEach(article => {
         latestNewsContainer.innerHTML += createNewsCard(article);
