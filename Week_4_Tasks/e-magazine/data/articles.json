@@ -1,0 +1,131 @@
+[
+    {
+        "id": 1,
+        "title": "Breaking News: Aswin met with an accident",
+        "description": "Aswin ,the student of panimalar met with an accident.",
+        "category": "Health",
+        "content": "Aswin , the student of panimalar engineering college have hit an auto rickshaw and met with an accident near college.",
+        "image": "assets/images/sports.jpg",
+        "video": "assets/videos/tech-breakthrough.mp4",
+        "keywords": ["Accident", "Medical", "Health"],
+        "views": 12000,
+        "comments": [
+            { "user": "JohnDoe", "comment": "Omg ! so sad" },
+            { "user": "JaneSmith", "comment": "Is he okay" }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Global news : Gay couple Detected in India",
+        "description": "In India the gay couples started to roam freely!",
+        "category": "Global",
+        "content": "A new gay couples detected .",
+        "image": "assets/images/sports.jpg",
+        "video": "assets/videos/sports-highlights.mp4",
+        "keywords": ["Sports", "Championship", "Finals"],
+        "views": 950,
+        "comments": [
+            { "user": "SportsFan99", "comment": "What a match!" },
+            { "user": "GoalMaster", "comment": "Incredible performance!" }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Global Politics: New Trade Agreement Signed",
+        "description": "World leaders have signed a historic trade agreement today.",
+        "category": "Politics",
+        "content": "The agreement aims to strengthen economic ties between nations, promoting free trade and cooperation.",
+        "image": "assets/images/sports.jpg",
+        "video": "assets/videos/trade-agreement.mp4",
+        "keywords": ["Politics", "Trade", "Economy"],
+        "views": 850,
+        "comments": [
+            { "user": "NewsWatcher", "comment": "This will impact global markets!" },
+            { "user": "EconExpert", "comment": "Big move in the trade world." }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Health: New Vaccine Announced",
+        "description": "Medical researchers announce a new breakthrough vaccine.",
+        "category": "Health",
+        "content": "The newly developed vaccine has shown a 95% success rate in clinical trials, offering hope against the latest outbreak.",
+        "image": "assets/images/sports.jpg",
+        "video": "assets/videos/vaccine-news.mp4",
+        "keywords": ["Health", "Vaccine", "Medicine"],
+        "views": 780,
+        "comments": [
+            { "user": "DoctorMike", "comment": "Great progress in medicine!" }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Entertainment: Upcoming Movie Releases",
+        "description": "Hollywood reveals the most anticipated movies of the year.",
+        "category": "Entertainment",
+        "content": "A star-studded lineup of blockbuster films is set to hit theaters this summer, promising action, drama, and excitement.",
+        "image": "assets/images/sports.jpg",
+        "video": "assets/videos/movie-trailer.mp4",
+        "keywords": ["Movies", "Entertainment", "Hollywood"],
+        "views": 1020,
+        "comments": [
+            { "user": "MovieBuff", "comment": "Can't wait to watch these!" }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Science: Mars Rover Sends New Images",
+        "description": "NASA's rover sends breathtaking images from Mars.",
+        "category": "Science",
+        "content": "The latest images from Mars reveal stunning landscapes and potential signs of ancient water activity.",
+        "image": "assets/images/sports.jpg",
+        "video": "assets/videos/mars-exploration.mp4",
+        "keywords": ["Science", "Space", "Mars"],
+        "views": 890,
+        "comments": [
+            { "user": "SpaceFan", "comment": "Incredible images!" }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Business: Stock Market Hits Record Highs",
+        "description": "Markets reach new heights amid strong earnings.",
+        "category": "Business",
+        "content": "Investors celebrate as major stock indices soar to all-time highs, driven by tech and energy sectors.",
+        "image": "assets/images/sports.jpg",
+        "video": "assets/videos/stock-market-update.mp4",
+        "keywords": ["Business", "Stocks", "Finance"],
+        "views": 760,
+        "comments": [
+            { "user": "Investor123", "comment": "Great time to invest!" }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Environment: Renewable Energy Adoption Rises",
+        "description": "Global adoption of renewable energy sources is at an all-time high.",
+        "category": "Environment",
+        "content": "Governments worldwide are investing in wind and solar energy to reduce carbon emissions and combat climate change.",
+        "image": "assets/images/sports.jpg",
+        "video": "assets/videos/green-energy.mp4",
+        "keywords": ["Environment", "Renewable Energy", "Climate"],
+        "views": 680,
+        "comments": [
+            { "user": "EcoWarrior", "comment": "Great step towards a cleaner future!" }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Travel: Top Destinations for 2025",
+        "description": "Explore the most beautiful travel spots for the upcoming year.",
+        "category": "Travel",
+        "content": "From pristine beaches to cultural hotspots, here are the must-visit destinations in 2025.",
+        "image": "assets/images/sports.jpg",
+        "video": "assets/videos/travel-destinations.mp4",
+        "keywords": ["Travel", "Tourism", "Adventure"],
+        "views": 500,
+        "comments": [
+            { "user": "GlobeTrotter", "comment": "Adding these to my bucket list!" }
+        ]
+    }
+]

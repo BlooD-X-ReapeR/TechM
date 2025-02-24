@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Details</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="container-fluid bg-dark text-white p-3 text-center d-flex justify-content-between align-items-center">
+        <h1 class="m-0">E-Bulletin</h1>
+        <a href="index.html" class="btn btn-light">Back to Home</a>
+    </header>
+    
+    <div class="container mt-4">
+        <div id="article-content" class="text-center">
+            <img id="article-image" src="" class="img-fluid mb-3" alt="Article Image">
+            <h2 id="article-title"></h2>
+            <p><strong>Category:</strong> <span id="article-category"></span></p>
+            <p><strong>Keywords:</strong> <span id="article-keywords"></span></p>
+            <p id="article-description"></p>
+            <div id="video-container" class="d-none">
+                <video id="article-video" controls class="w-100">
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p><strong>Views:</strong> <span id="article-views"></span></p>
+        </div>
+        
+        <div class="mt-4">
+            <h3>Comments</h3>
+            <ul id="comment-list" class="list-group mb-3">
+                <!-- Comments will be dynamically loaded here -->
+            </ul>
+            <textarea id="comment-input" class="form-control" placeholder="Add a comment..."></textarea>
+            <button id="submit-comment" class="btn btn-primary mt-2">Submit</button>
+        </div>
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const articleId = urlParams.get("id");
+
+    fetch("data/articles.json")
+        .then(response => response.json())
+        .then(articles => {
+            const article = articles.find(a => a.id == articleId);
+            if (article) {
+                document.getElementById("article-image").src = article.image;
+                document.getElementById("article-title").textContent = article.title;
+                document.getElementById("article-category").textContent = article.category;
+                document.getElementById("article-keywords").textContent = article.keywords.join(", ");
+                document.getElementById("article-description").textContent = article.description;
+                document.getElementById("article-views").textContent = article.views;
+                
+                // Check if video exists, if yes display video and load source
+                const videoContainer = document.getElementById("video-container");
+                if (article.video) {
+                    document.getElementById("article-video").src = article.video;
+                    videoContainer.classList.remove("d-none");
+                } else {
+                    videoContainer.classList.add("d-none");
+                }
+                
+                loadComments(article.comments);
+            }
+        });
+
+    function loadComments(comments) {
+        const commentList = document.getElementById("comment-list");
+        commentList.innerHTML = "";
+        comments.forEach(comment => {
+            const li = document.createElement("li");
+            li.className = "list-group-item";
+            li.textContent = `${comment.user}: ${comment.comment}`;
+            commentList.appendChild(li);
+        });
+    }
+
+    document.getElementById("submit-comment").addEventListener("click", () => {
+        const commentInput = document.getElementById("comment-input").value;
+        if (commentInput.trim() !== "") {
+            const newComment = { user: "Anonymous", comment: commentInput };
+            const commentList = document.getElementById("comment-list");
+            const li = document.createElement("li");
+            li.className = "list-group-item";
+            li.textContent = `${newComment.user}: ${newComment.comment}`;
+            commentList.appendChild(li);
+            document.getElementById("comment-input").value = "";
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
