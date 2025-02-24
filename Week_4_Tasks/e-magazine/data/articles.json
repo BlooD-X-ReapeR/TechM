@@ -5,8 +5,8 @@
         "description": "Aswin ,the student of panimalar met with an accident.",
         "category": "Health",
         "content": "Aswin , the student of panimalar engineering college have hit an auto rickshaw and met with an accident near college.",
-        "image": "assets/images/sports.jpg",
-        "video": "assets/videos/tech-breakthrough.mp4",
+        "image": "assets/images/Aswin_accident.jpeg",
+        "video": "assets/videos/Aswin_accident.mp4",
         "keywords": ["Accident", "Medical", "Health"],
         "views": 12000,
         "comments": [
@@ -16,27 +16,25 @@
     },
     {
         "id": 2,
-        "title": "Global news : Gay couple Detected in India",
-        "description": "In India the gay couples started to roam freely!",
+        "title": "Global news : New type couple Detected in India",
+        "description": "In India the couples started to roam freely!",
         "category": "Global",
-        "content": "A new gay couples detected .",
-        "image": "assets/images/sports.jpg",
-        "video": "assets/videos/sports-highlights.mp4",
-        "keywords": ["Sports", "Championship", "Finals"],
+        "content": "A new couple detected and started a new trend in India .",
+        "image": "assets/images/Couples.jpeg",
+        "keywords": ["Global", "New Type", "Couples"],
         "views": 950,
         "comments": [
-            { "user": "SportsFan99", "comment": "What a match!" },
-            { "user": "GoalMaster", "comment": "Incredible performance!" }
+            { "user": "Jai Ganesh", "comment": "What a lovely couples!" },
+            { "user": "Balaji", "comment": "I hate this culture" }
         ]
     },
     {
         "id": 3,
-        "title": "Global Politics: New Trade Agreement Signed",
-        "description": "World leaders have signed a historic trade agreement today.",
-        "category": "Politics",
-        "content": "The agreement aims to strengthen economic ties between nations, promoting free trade and cooperation.",
-        "image": "assets/images/sports.jpg",
-        "video": "assets/videos/trade-agreement.mp4",
+        "title": "Global Politics: Poverty rate increased in India",
+        "description": "In India the poverty rate went from 5 -15%.",
+        "category": "Economy",
+        "content": "The nation's people has suffered a lot so that the national trade centre have announced that India's poverty rate have increased from 5% to 15 %.",
+        "image": "assets/images/Poverty.jpeg",
         "keywords": ["Politics", "Trade", "Economy"],
         "views": 850,
         "comments": [
@@ -46,27 +44,25 @@
     },
     {
         "id": 4,
-        "title": "Health: New Vaccine Announced",
-        "description": "Medical researchers announce a new breakthrough vaccine.",
-        "category": "Health",
-        "content": "The newly developed vaccine has shown a 95% success rate in clinical trials, offering hope against the latest outbreak.",
-        "image": "assets/images/sports.jpg",
-        "video": "assets/videos/vaccine-news.mp4",
-        "keywords": ["Health", "Vaccine", "Medicine"],
+        "title": "Entertainment: Upcoming Movie Releases",
+        "description": "Karate with 3 Kids movie release .",
+        "category": "Entertainment",
+        "content": "The most awaited <strong>Karate with 3 Kids</strong> movie has released and got a huge collection of over 3 trillion worldwide.",
+        "image": "assets/images/Karate_kid4.jpeg",
+        "keywords": ["Entertainment", "Movies", "Karate with 3 kids"],
         "views": 780,
         "comments": [
-            { "user": "DoctorMike", "comment": "Great progress in medicine!" }
+            { "user": "DoctorMike", "comment": "That was really a nice movie!" }
         ]
     },
     {
         "id": 5,
-        "title": "Entertainment: Upcoming Movie Releases",
-        "description": "Hollywood reveals the most anticipated movies of the year.",
-        "category": "Entertainment",
-        "content": "A star-studded lineup of blockbuster films is set to hit theaters this summer, promising action, drama, and excitement.",
-        "image": "assets/images/sports.jpg",
-        "video": "assets/videos/movie-trailer.mp4",
-        "keywords": ["Movies", "Entertainment", "Hollywood"],
+        "title": "Breaking News: Dead body found in kaveri",
+        "description": "Deveshwaran has found dead in kaveri river.",
+        "category": "Health",
+        "content": "Deveshwaran ,the man from wavin has found dead and the body started floating in the kaveri river. The police are suspecting it should be a murder",
+        "image": "assets/images/deadbody.jpeg",
+        "keywords": ["Dead", "Breaking news", "kaveri"],
         "views": 1020,
         "comments": [
             { "user": "MovieBuff", "comment": "Can't wait to watch these!" }
@@ -74,13 +70,12 @@
     },
     {
         "id": 6,
-        "title": "Science: Mars Rover Sends New Images",
-        "description": "NASA's rover sends breathtaking images from Mars.",
-        "category": "Science",
-        "content": "The latest images from Mars reveal stunning landscapes and potential signs of ancient water activity.",
-        "image": "assets/images/sports.jpg",
-        "video": "assets/videos/mars-exploration.mp4",
-        "keywords": ["Science", "Space", "Mars"],
+        "title": "Economy: India's economy raised by drunkards",
+        "description": "Tamilnadu drunkards have bought beverage which reaised economy.",
+        "category": "Economy",
+        "content": "Tamilnadu beverage companies have got more profit during the sales in diwali sale.The tamilnadu kudimagans have made the sales of beverages nearly 2 Billion in this diwali",
+        "image": "assets/images/drunk.jpeg",
+        "keywords": ["Economy", "Diwali sale", "Kudimagans"],
         "views": 890,
         "comments": [
             { "user": "SpaceFan", "comment": "Incredible images!" }
@@ -88,13 +83,13 @@
     },
     {
         "id": 7,
-        "title": "Business: Stock Market Hits Record Highs",
-        "description": "Markets reach new heights amid strong earnings.",
-        "category": "Business",
-        "content": "Investors celebrate as major stock indices soar to all-time highs, driven by tech and energy sectors.",
-        "image": "assets/images/sports.jpg",
+        "title": "Breaking News: Pakistan supporter suicide",
+        "description": "Pakistan supports attempted suicide for Pakistan fail.",
+        "category": "Health",
+        "content": "Khalid ,a young engineering graduate attempted suicide for the pakistan cricket team lost the match against Indian cricket team.",
+        "image": "assets/images/Pak_sports.jpeg",
         "video": "assets/videos/stock-market-update.mp4",
-        "keywords": ["Business", "Stocks", "Finance"],
+        "keywords": ["Health", "suicide", "khalid"],
         "views": 760,
         "comments": [
             { "user": "Investor123", "comment": "Great time to invest!" }
@@ -102,13 +97,12 @@
     },
     {
         "id": 8,
-        "title": "Environment: Renewable Energy Adoption Rises",
-        "description": "Global adoption of renewable energy sources is at an all-time high.",
-        "category": "Environment",
-        "content": "Governments worldwide are investing in wind and solar energy to reduce carbon emissions and combat climate change.",
-        "image": "assets/images/sports.jpg",
-        "video": "assets/videos/green-energy.mp4",
-        "keywords": ["Environment", "Renewable Energy", "Climate"],
+        "title": "Breaking News: Mithra missing",
+        "description": "A young woman was abducted for money.",
+        "category": "Missing",
+        "content": "Mithra , a young woman from tenampet went missing.After a long investigation by police they have found out that Mithra was abducted by strangers for money",
+        "image": "assets/images/mithra.jpeg",
+        "keywords": ["Mithra", "Abduction", "missing"],
         "views": 680,
         "comments": [
             { "user": "EcoWarrior", "comment": "Great step towards a cleaner future!" }
@@ -116,13 +110,26 @@
     },
     {
         "id": 9,
-        "title": "Travel: Top Destinations for 2025",
-        "description": "Explore the most beautiful travel spots for the upcoming year.",
-        "category": "Travel",
-        "content": "From pristine beaches to cultural hotspots, here are the must-visit destinations in 2025.",
+        "title": "Sports : Danish joined Indian Team",
+        "description": "Dhanish Chander from tamilnadu joined india cricket.",
+        "category": "Sports",
+        "content": "The proud of TamilNadu ,Dhanish Chander has been selected for the indian team directly as a Captain.They have appointed him as a Captain because of his record Breaking Strike Rate ",
         "image": "assets/images/sports.jpg",
-        "video": "assets/videos/travel-destinations.mp4",
-        "keywords": ["Travel", "Tourism", "Adventure"],
+        "video": "assets/videos/captain.mp4",
+        "keywords": ["Sports", "Indian cricket team", "Indian Team Captain"],
+        "views": 500,
+        "comments": [
+            { "user": "GlobeTrotter", "comment": "Adding these to my bucket list!" }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Entertainment : Actor Steve's Price Sky rocketed",
+        "description": "Actor Steve's salary crossed The famous RDJ.",
+        "category": "Entertainment",
+        "content": "Actor Steve from California's salary have sky rocketed that his current salary for 1 film is estimated to be around 2 Trillion.He have crossed the Robert Downey Jr. who was before the highest paid actor in world",
+        "image": "assets/images/steve.jpeg",
+        "keywords": ["Entertainment", "Highest Paid actor", "Steve"],
         "views": 500,
         "comments": [
             { "user": "GlobeTrotter", "comment": "Adding these to my bucket list!" }

@@ -20,6 +20,7 @@
             <p><strong>Category:</strong> <span id="article-category"></span></p>
             <p><strong>Keywords:</strong> <span id="article-keywords"></span></p>
             <p id="article-description"></p>
+            <p id="article-content-text"></p>
             <div id="video-container" class="d-none">
                 <video id="article-video" controls class="w-100">
                     <source src="" type="video/mp4">
@@ -54,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById("article-category").textContent = article.category;
                 document.getElementById("article-keywords").textContent = article.keywords.join(", ");
                 document.getElementById("article-description").textContent = article.description;
+                document.getElementById("article-content-text").textContent = article.content;
                 document.getElementById("article-views").textContent = article.views;
                 
                 // Check if video exists, if yes display video and load source

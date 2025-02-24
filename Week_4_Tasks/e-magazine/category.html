@@ -28,7 +28,7 @@
             const category = urlParams.get("category");
             document.getElementById("category-title").textContent = category + " News";
     
-            fetch("./../data/articles.json")
+            fetch("./data/articles.json")
                 .then(response => response.json())
                 .then(articles => {
                     const newsList = document.getElementById("news-list");
